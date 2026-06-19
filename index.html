@@ -4,191 +4,125 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Student Study Hub</title>
+    <title>StudyFlix</title>
 
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <div class="navbar">
+    <nav class="navbar">
 
         <div class="logo">
-            📚 Student Study Hub
+            📚 StudyFlix
         </div>
 
-        <div>
+        <div class="nav-links">
             <a href="index.html">Home</a>
             <a href="physics.html">Physics</a>
             <a href="chemistry.html">Chemistry</a>
-            <a href="maths.html">Mathematics</a>
-
-            <button onclick="toggleDarkMode()" class="dark-btn">
-                🌙
-            </button>
+            <a href="maths.html">Maths</a>
+            <a href="quiz.html">Quiz</a>
         </div>
 
-    </div>
+    </nav>
 
     <section class="hero">
 
-        <h1>Learn Smarter, Score Better 🚀</h1>
+        <h1>
+            Master CBSE Class 10
+        </h1>
 
         <p>
-            Free Notes, Formulas, Revision Material and Practice Questions
-            for students.
+            Notes • PYQs • Quizzes • Revision Sheets
         </p>
 
-        <a href="#subjects" class="btn">
-            Explore Subjects
-        </a>
+        <input
+            type="text"
+            class="search-bar"
+            placeholder="🔍 Search chapters..."
+        >
 
     </section>
 
-    <section class="stats">
+    <section class="subjects">
 
-        <div class="stat-box">
-            <h2>3+</h2>
-            <p>Subjects</p>
-        </div>
+        <h2>Continue Learning</h2>
 
-        <div class="stat-box">
-            <h2>50+</h2>
-            <p>Notes</p>
-        </div>
+        <div class="subject-row">
 
-        <div class="stat-box">
-            <h2>100+</h2>
-            <p>Practice Questions</p>
-        </div>
+            <a href="physics.html" class="subject-card physics-card">
 
-    </section>
-
-<section class="search-section">
-
-    <h2>🔍 Search Your Chapter</h2>
-
-    <input
-        type="text"
-        placeholder="Search Electricity, Trigonometry, Carbon..."
-        class="search-box">
-
-</section>
-
-<section class="challenge">
-
-    <h2>🔥 Daily Challenge</h2>
-
-    <p>
-        What is the SI Unit of Resistance?
-    </p>
-
-    <div class="quiz-options">
-
-        <button>Volt</button>
-        <button>Ampere</button>
-        <button>Ohm</button>
-        <button>Coulomb</button>
-
-    </div>
-
-</section>
-
-    <section class="progress">
-
-    <h2>🎯 Road To 95%+</h2>
-
-    <div class="progress-item">
-
-        <p>Physics</p>
-
-        <div class="progress-bar">
-            <div class="progress-fill physics"></div>
-        </div>
-
-    </div>
-
-    <div class="progress-item">
-
-        <p>Chemistry</p>
-
-        <div class="progress-bar">
-            <div class="progress-fill chemistry"></div>
-        </div>
-
-    </div>
-
-    <div class="progress-item">
-
-        <p>Mathematics</p>
-
-        <div class="progress-bar">
-            <div class="progress-fill maths"></div>
-        </div>
-
-    </div>
-
-</section>
-    
-    
-    <section class="features">
-
-        <div class="feature">
-            <h3>📚 Notes</h3>
-            <p>Chapter-wise study notes.</p>
-        </div>
-
-        <div class="feature">
-            <h3>📝 Quizzes</h3>
-            <p>Interactive tests coming soon.</p>
-        </div>
-
-        <div class="feature">
-            <h3>🚀 Revision</h3>
-            <p>Quick formula sheets.</p>
-        </div>
-
-    </section>
-
-    <div class="container">
-
-        <h2 id="subjects">Subjects</h2>
-
-        <div class="card-container">
-
-            <a href="physics.html" class="card">
                 <h3>⚡ Physics</h3>
-                <p>Explore Physics Notes</p>
+
+                <p>
+                    Electricity<br>
+                    Magnetic Effects<br>
+                    Sources of Energy
+                </p>
+
             </a>
 
-            <a href="chemistry.html" class="card">
+            <a href="chemistry.html" class="subject-card chemistry-card">
+
                 <h3>🧪 Chemistry</h3>
-                <p>Explore Chemistry Notes</p>
+
+                <p>
+                    Reactions<br>
+                    Acids & Bases<br>
+                    Carbon Compounds
+                </p>
+
             </a>
 
-            <a href="maths.html" class="card">
+            <a href="maths.html" class="subject-card maths-card">
+
                 <h3>📐 Mathematics</h3>
-                <p>Explore Mathematics Notes</p>
+
+                <p>
+                    Trigonometry<br>
+                    Circles<br>
+                    Probability
+                </p>
+
             </a>
 
         </div>
 
-        <div class="footer">
-            Student Study Hub © 2026
+    </section>
+
+    <section class="popular">
+
+        <h2>🔥 Popular Chapters</h2>
+
+        <div class="subject-row">
+
+            <div class="chapter-card">
+                ⚡ Electricity
+            </div>
+
+            <div class="chapter-card">
+                📐 Trigonometry
+            </div>
+
+            <div class="chapter-card">
+                🧪 Acids & Bases
+            </div>
+
+            <div class="chapter-card">
+                ⚡ Sources of Energy
+            </div>
+
         </div>
 
-    </div>
+    </section>
 
-    <script>
-        function toggleDarkMode() {
-            document.body.classList.toggle("dark");
-        }
-    </script>
-    
-<a href="#" class="top-btn">
-⬆
-</a>
-    
+    <footer>
+
+        StudyFlix © 2026
+
+    </footer>
+
 </body>
 
 </html>
