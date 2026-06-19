@@ -141,3 +141,39 @@ body{
     }
 
 }
+
+
+
+.chapter-card{
+
+    background:white;
+
+    padding:25px;
+
+    margin:20px 0;
+
+    border-radius:12px;
+
+    box-shadow:0 4px 10px rgba(0,0,0,0.1);
+
+}
+
+.chapter-card h2{
+
+    margin-bottom:10px;
+
+}
+
+.chapter-card p{
+
+    margin-bottom:15px;
+
+}
+
+.dark .chapter-card{
+
+    background:#222;
+
+    color:white;
+
+}
